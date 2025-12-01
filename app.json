@@ -1,17 +1,18 @@
 {
   "expo": {
-    "name": "Smart-Tracker",
-    "slug": "Smart-Tracker",
+    "name": "SiglaTrack",
+    "slug": "Siglatrack",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "smarttracker",
+    "scheme": "siglatracker",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.malupait.siglatrack",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
