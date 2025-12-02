@@ -122,8 +122,53 @@ npm run dev
 ```
 ```bash
 firebase deploy --only functions
-
 ```
+
+## 📅 Project Roadmap (SiglaTrack)
+**Deadline: 3rd Week of January 2026**
+
+### Phase 1 — Planning (Week 1–2)
+- Define app features  
+- Write project overview  
+- Finalize user flow  
+
+### Phase 2 — Setup (Week 3)
+- Install dependencies  
+- Create Expo project  
+- Connect Firebase  
+
+### Phase 3 — App Structure (Week 4)
+- Create folder structure  
+- Setup navigation  
+
+### Phase 4 — UI/UX (Month 1–1.5)
+- Wireframe screens  
+- Develop basic UI  
+
+### Phase 5 — Core Features (Month 2–3)
+- Task creation  
+- Habit tracking  
+- Calendar  
+- Reminders  
+
+### Phase 6 — Smart Features (Month 3–4)
+- Mood logs  
+- Analytics charts  
+
+### Phase 7 — Optimization (Month 4–5)
+- Responsive UI  
+- Data loading optimization  
+
+### Phase 8 — Documentation (Month 5)
+- Complete sections 1–8  
+
+### Phase 9 — Final Submission (Jan 2026)
+- Build APK  
+- Demo video  
+- Final report  
+
+
+
 📖 Expo Boilerplate Notes
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
