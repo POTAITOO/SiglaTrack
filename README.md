@@ -13,7 +13,7 @@ A habit and event tracking app designed to gamify productivity, enhance mental w
 ---
 
 ## 📂 Project Structure
-
+```
 SiglaTrack/
 │
 ├── frontend/                  # React Native + Expo app
@@ -50,7 +50,7 @@ SiglaTrack/
 │
 ├── .gitignore                 # Git ignore file
 └── README.md                  # Root README for GitHub
-
+```
 
 ---
 
@@ -120,10 +120,11 @@ cd backend
 npm install
 npm run dev
 ```
-```
+```bash
 firebase deploy --only functions
+
 ```
-# Welcome to your Expo app 👋
+📖 Expo Boilerplate Notes
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
