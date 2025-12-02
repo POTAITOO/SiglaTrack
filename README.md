@@ -1,3 +1,128 @@
+# SiglaTrack 🧭  
+A habit and event tracking app designed to gamify productivity, enhance mental wellness, and streamline daily planning.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React Native (Expo)
+- **Backend:** Node.js (Express)
+- **Database & Auth:** Firebase (Firestore, Auth, Cloud Functions)
+- **Calendar Integration:** Google Calendar, Outlook Sync
+
+---
+
+## 📂 Project Structure
+
+SiglaTrack/
+│
+├── frontend/                  # React Native + Expo app
+│   ├── assets/                # Images, fonts, icons
+│   ├── components/            # Reusable UI components
+│   ├── screens/               # App screens (Home, Dashboard, HabitTracker, etc.)
+│   ├── navigation/            # React Navigation setup
+│   ├── context/               # Global state (e.g., AuthContext, HabitContext)
+│   ├── utils/                 # Helper functions, constants
+│   ├── services/              # API calls, Firebase client setup
+│   ├── hooks/                 # Custom React hooks
+│   ├── App.js                 # Entry point
+│   └── app.json               # Expo config
+│
+├── backend/                   # Node.js + Firebase backend
+│   ├── controllers/           # Logic for handling requests
+│   ├── models/                # Data models (if using Firestore structure)
+│   ├── routes/                # Express routes
+│   ├── middleware/            # Auth, validation, etc.
+│   ├── utils/                 # Helper functions
+│   ├── config/                # Firebase config, env setup
+│   ├── index.js               # Entry point for Express server
+│   └── package.json           # Backend dependencies
+│
+├── firebase/                  # Firebase functions and rules
+│   ├── functions/             # Cloud Functions
+│   ├── firestore.rules        # Firestore security rules
+│   └── firebase.json          # Firebase project config
+│
+├── docs/                      # Documentation, roadmap, diagrams
+│   ├── roadmap.txt            # Feature roadmap (Notepad version)
+│   ├── architecture.png       # Visual roadmap chart
+│   └── README.md              # Project overview
+│
+├── .gitignore                 # Git ignore file
+└── README.md                  # Root README for GitHub
+
+
+---
+
+## 🧩 Feature Roadmap
+
+### ✅ Core Functions
+- **Event & Task Creation**
+  - Title, description, date, time, category
+  - Priority, reminder, repeat schedule
+
+- **Overview Dashboard**
+  - Daily, weekly, monthly calendar view
+  - Today’s task summary
+  - Progress tracker (e.g., “70% complete”)
+
+- **Smart Reminders**
+  - Time-based
+  - Location-based (geo-triggered)
+  - Behavior-based (“You usually do this every morning”)
+
+- **Habit Tracking Integrated With Events**
+  - Convert events into habits (e.g., “Read 20 mins daily”)
+  - Visual habit streaks (🔥 21-day streak, ⏳ almost there badge)
+  - Gamified productivity
+
+---
+
+### ✨ Enhancements
+- **Mood + Context Tracking**
+  - Log mood alongside habits/events
+  - Correlate habits with emotional states
+  - Notes + charts to visualize mental health impact
+
+- **Smart Calendar Sync**
+  - Sync with Google/Outlook calendars
+  - Detect free time slots & suggest habit scheduling
+  - Prevent clashes (e.g., reschedule workout if meeting overlaps)
+
+- **Color Labels for Status**
+  - Green = Completed
+  - Red = Missed
+  - Yellow = Deferred
+  - Blue = Active habits
+
+---
+
+### 🚀 Advanced Features
+- **Gamified Social Challenges**
+  - Challenge friends (e.g., “Drink 8 glasses of water daily for 7 days”)
+  - Leaderboards, badges, and rewards for consistency
+  - Team habits: groups build habits together
+
+---
+
+## 📌 Setup Instructions
+
+### Frontend
+```bash
+cd frontend
+npm install
+npx expo start
+```
+
+### Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
+```
+firebase deploy --only functions
+```
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
@@ -33,18 +158,4 @@ When you're ready, run:
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
