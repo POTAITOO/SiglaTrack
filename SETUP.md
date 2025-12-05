@@ -8,7 +8,21 @@ This project requires Android SDK to run on Android devices/emulators.
    - Install with default settings
    - Make sure to install Android SDK, Android SDK Platform, and Android Virtual Device
 
-2. **Set up Environment Variables**:
+2. **Install Node.js**: Download from https://nodejs.org/
+   - Recommended: LTS version (18.x or higher)
+   - Includes npm and npx automatically
+
+3. **Install Expo CLI** (Optional but recommended):
+   ```bash
+   npm install -g @expo/cli
+   ```
+
+4. **Expo Go Requirements**:
+   - **For Emulator**: Expo Go will be automatically downloaded and installed when you run `npx expo start --android`
+   - **For Physical Device**: Download Expo Go from Google Play Store
+   - **Network**: Both development machine and device/emulator must be on same network
+
+5. **Set up Environment Variables**:
 
    ### For Windows (Git Bash/VS Code Terminal):
    
@@ -22,15 +36,18 @@ This project requires Android SDK to run on Android devices/emulators.
    
    **Replace `YOUR_USERNAME` with your actual Windows username**
 
-3. **Reload your terminal** or run:
+6. **Reload your terminal** or run:
    ```bash
    source ~/.bash_profile
    source ~/.bashrc
    ```
 
-4. **Verify installation**:
+7. **Verify installation**:
    ```bash
    adb --version
+   node --version
+   npm --version
+   npx --version
    ```
 
 ## Running the Android App
@@ -66,12 +83,20 @@ If you want to use Android Studio directly:
    - Start the emulator
 
 2. **Expo Go App Installation**:
-   - When you run `npx expo start --android`, Expo Go will be automatically installed
-   - Alternatively, download Expo Go from Google Play Store within the emulator
+   - **Automatic (Recommended)**: When you run `npx expo start --android`, Expo Go will be automatically downloaded and installed on the emulator
+   - **Manual**: Open Google Play Store in emulator → Search "Expo Go" → Install
+   - **First Launch**: May take 30-60 seconds to download (~50MB)
+   
+3. **Expo Go Requirements**:
+   - **Minimum Android**: API 21 (Android 5.0) or higher
+   - **Internet Connection**: Required for downloading and running development builds
+   - **Storage**: ~100MB free space for Expo Go and cache
 
-3. **Network Configuration**:
+4. **Network Configuration**:
    - Ensure the emulator can access your development machine's network
-   - If connection issues occur, try: `npx expo start --tunnel`
+   - **Default**: Uses local network (192.168.x.x)
+   - **Tunnel mode**: If connection issues occur, try: `npx expo start --tunnel`
+   - **Localhost**: Web version available at `http://localhost:8081`
 
 ## Troubleshooting
 
